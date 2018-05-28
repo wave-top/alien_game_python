@@ -7,11 +7,13 @@
 
 创建+切换分支：git checkout -b <name>
 
-合并某分支到当前分支：git merge <name>
+合并某分支到当前分支：git merge <name>	# 上面的Fast-forward信息，这次合并是“快进模式”（用于新开分支 基于master分支 做了开发和提交，直接merge到master）
+创建新commit，commit描述写入：git merge --no-ff -m "merge with no-ff"  new_branch # 强制禁用Fast forward模式，Git会在merge时生成新的commit，从分支历史上就可看出分支信息
 
 删除分支：git branch -d <name>
 
-看到分支合并图: git log --graph
+看到分支合并图_方法1:git log --graph --pretty=oneline --abbrev-commit
+看到分支合并图_方法2: git log --graph
 
 2.回退版本相关
 查看当前仓库的提交log：git log
