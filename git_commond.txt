@@ -27,3 +27,4 @@
 查看储藏: git stash list
 应用储藏: git stash apply	# git stash apply stash@{2} //不指定一个储藏，Git 认为指定的是最近的储藏
 移除储藏: git stash drop	# git stash drop stash@{2}	//将要移除的储藏的名字来移除
+恢复删除存储: git stash pop	# git stash pop stash@{2}	//恢复的同时把stash内容也删了
