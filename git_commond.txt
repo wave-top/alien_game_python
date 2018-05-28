@@ -21,3 +21,9 @@
 回退到前面第n版：git reset --hard HEAD~n
 回退到前面第n版某个指定的commond ID：git reset --hard Commond ID
 查看你的每一次提交命令：git reflog
+
+3.储藏当前工作与应用储藏的工作
+储藏修改: git stash		# 将新的储藏推送到栈上
+查看储藏: git stash list
+应用储藏: git stash apply	# git stash apply stash@{2} //不指定一个储藏，Git 认为指定的是最近的储藏
+移除储藏: git stash drop	# git stash drop stash@{2}	//将要移除的储藏的名字来移除
